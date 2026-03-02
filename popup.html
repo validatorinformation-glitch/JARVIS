@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JARVIS - Sovereign Steward</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="jarvis-popup">
+    <div class="header">
+      <h1>JARVIS</h1>
+      <span class="subtitle">Sovereign Steward</span>
+      <div class="status" id="status-indicator">
+        <span class="status-dot"></span>
+        <span id="status-text">Initializing...</span>
+      </div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value" id="memory-count">0</div>
+        <div class="stat-label">Memories</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="context-count">0</div>
+        <div class="stat-label">Contexts</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="session-status">--</div>
+        <div class="stat-label">Session</div>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="btn-rehydrate" class="btn btn-primary">Rehydrate</button>
+      <button id="btn-export" class="btn btn-secondary">Export Memory</button>
+      <button id="btn-clear" class="btn btn-danger">Clear All</button>
+    </div>
+    <div class="footer">
+      <span>v1.0.0</span>
+      <span>AEGIS Protocol Active</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
